@@ -33,6 +33,10 @@ body {
   height: 25px;
   font-size: 16px;
 }
+.bottom .credit {
+  color: yellow;
+}
+
 nav {
   background: #21618ccc;
   height: 60px;
@@ -82,24 +86,27 @@ label::before {
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
-@keyframes animate {
-  0%,
-  10%,
-  100% {
-    width: 0%;
-  }
-  70%,
-  90% {
-    width: 100%;
-  }
-}
 iframe {
   bottom: 0;
   position: absolute;
   margin-bottom: 50px;
-  margin-left: 1250px;
+  margin-left: 1400px;
   margin-right: 20px;
+  box-shadow: 0px 14px 28px black;
 }
+.logo {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 10px yellow;
+  }
+}
+
 /*#glow {
   background: linear-gradient(
     90deg,
